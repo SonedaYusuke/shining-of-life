@@ -1,0 +1,96 @@
+@import "_color.scss";
+@import "_mixin.scss";
+
+.inochi {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  &__wrapper {
+    &--1 {
+      @include wrapper-pos(120px, 28px);
+    }
+    &--2 {
+      @include wrapper-pos(96px, 50px);
+    }
+    &--3 {
+      @include wrapper-pos(70px, 80px);
+    }
+    &--4 {
+      @include wrapper-pos(70px, 120px);
+    }
+    &--5 {
+      @include wrapper-pos(90px, 160px);
+    }
+    &--6 {
+      @include wrapper-pos(110px, 216px);
+    }
+    &--7 {
+      @include wrapper-pos(140px, 220px);
+    }
+    &--8 {
+      @include wrapper-pos(190px, 190px);
+    }
+    &--9 {
+      @include wrapper-pos(210px, 120px);
+    }
+    &--10 {
+      @include wrapper-pos(190px, 100px);
+    }
+    &--11 {
+      @include wrapper-pos(160px, 30px);
+    }
+  }
+
+  &__body {
+    &--1 {
+      @include body-size(50px, 50px, 50%, 0);
+    }
+    &--2 {
+      @include body-size(40px, 40px, 100%, 0deg);
+    }
+    &--3 {
+      @include body-size(80px, 50px, 40%, 20deg, true);
+    }
+    &--4 {
+      @include body-size(60px, 60px, 100%, 0deg);
+    }
+    &--5 {
+      @include body-size(40px, 80px, 100%, 0deg);
+    }
+    &--6 {
+      @include body-size(50px, 50px, 100%, 0deg);
+    }
+    &--7 {
+      @include body-size(70px, 70px, 100%, 0deg);
+    }
+    &--8 {
+      @include body-size(80px, 70px, 100%, 0deg);
+    }
+    &--9 {
+      @include body-size(50px, 80px, 100%, 0deg);
+    }
+    &--10 {
+      @include body-size(90px, 30px, 100%, 0deg);
+    }
+    &--11 {
+      @include body-size(80px, 80px, 100%, 0deg);
+    }
+  }
+  &__eye {
+    &--3 {
+      @include eye(6px, 3px, 30px, 30px, 100%);
+    }
+    &--4 {
+      @include eye(24px, 24px, 30px, 30px, 100%);
+    }
+    &--7 {
+      @include eye(16px, 30px, 26px, 26px, 100%);
+    }
+    &--8 {
+      @include eye(30px, 20px, 40px, 40px, 100%);
+    }
+    &--11 {
+      @include eye(30px, 10px, 30px, 30px, 100%);
+    }
+  }
+}
