@@ -4,6 +4,7 @@ let pupilInfos = [];
 const init = (elements) => {
   const dataArray = [];
   Array.from(elements, (element) => {
+    element.setAttribute("style", `left: 0px; top: $0px`); //初期化
     const clientRect = element.getBoundingClientRect();
     dataArray.push({
       element,
@@ -25,6 +26,7 @@ const calcPos = (mouse, elePos, eleWidth) => {
     return mouse - elePos - eleWidth * 0.5;
   }
 };
+
 window.addEventListener("resize", () => {
   pupilInfos = init(pupilElements);
 });
