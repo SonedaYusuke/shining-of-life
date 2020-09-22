@@ -1,5 +1,6 @@
 @import "_color.scss";
 @import "_mixin.scss";
+@import "_keyframe.scss";
 
 body {
   margin: 0;
@@ -56,6 +57,7 @@ body {
   &__body {
     &--1 {
       @include body-size(50px, 50px, 50%, 0);
+      animation: beat 1.2s ease-in-out alternate-reverse infinite;
     }
     &--2 {
       @include body-size(40px, 40px, 100%, 0deg);
@@ -67,19 +69,22 @@ body {
       @include body-size(60px, 60px, 100%, 0deg);
     }
     &--5 {
-      @include body-size(40px, 80px, 100%, 0deg);
+      @include body-size(50px, 100px, 100%, 0deg);
+      animation: beat 1.5s 0.3s ease-in-out alternate-reverse infinite;
     }
     &--6 {
-      @include body-size(50px, 50px, 100%, 0deg);
+      @include body-size(60px, 60px, 100%, 0deg);
+      animation: beat 1.2s 0.3s ease-in-out alternate-reverse infinite;
     }
     &--7 {
       @include body-size(70px, 70px, 100%, 0deg);
     }
     &--8 {
-      @include body-size(80px, 70px, 100%, 0deg);
+      @include body-size(90px, 80px, 100%, 0deg);
+      animation: beat 1.3s ease-in-out alternate-reverse infinite;
     }
     &--9 {
-      @include body-size(50px, 80px, 100%, 0deg);
+      @include body-size(50px, 90px, 100%, 0deg);
     }
     &--10 {
       @include body-size(90px, 30px, 100%, 0deg);
