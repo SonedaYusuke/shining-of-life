@@ -1,4 +1,5 @@
 let pupilElements = document.getElementsByClassName("inochi__pupil");
+let pupilInfos = [];
 
 const init = (elements) => {
   const dataArray = [];
@@ -24,10 +25,12 @@ const calcPos = (mouse, elePos, eleWidth) => {
     return mouse - elePos - eleWidth * 0.5;
   }
 };
+window.addEventListener("resize", () => {
+  pupilInfos = init(pupilElements);
+});
 
 window.addEventListener("load", () => {
-  const pupilInfos = init(pupilElements);
-
+  pupilInfos = init(pupilElements);
   window.addEventListener("mousemove", (e) => {
     Array.from(pupilInfos, (pupilData) => {
       const posX = calcPos(e.clientX, pupilData.x, pupilData.width);

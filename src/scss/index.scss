@@ -5,10 +5,18 @@ body {
   margin: 0;
 }
 
+.wrapper-centering {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .inochi {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 340px;
+  height: 320px;
   &__wrapper {
     &--1 {
       @include wrapper-pos(120px, 28px);
