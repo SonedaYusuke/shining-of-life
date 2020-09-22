@@ -28,16 +28,12 @@
   background-color: $color-white;
   border-radius: $ratio;
   z-index: 10;
-  &::after {
-    background-color: $color-blue;
-    width: $height / 2;
-    height: $width / 2;
-    position: absolute;
-    z-index: 20;
-    left: $width / 4;
-    top: $height / 4;
-    // transform: translate((-$width / 4), (-$height / 4));
-    border-radius: 100%;
-    content: "";
-  }
+}
+
+@mixin pupil($side) {
+  position: absolute;
+  width: $side;
+  height: $side;
+  border-radius: 50%;
+  background-color: $color-blue;
 }

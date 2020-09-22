@@ -1,6 +1,10 @@
 @import "_color.scss";
 @import "_mixin.scss";
 
+body {
+  margin: 0;
+}
+
 .inochi {
   position: relative;
   width: 500px;
@@ -91,6 +95,23 @@
     }
     &--11 {
       @include eye(30px, 10px, 30px, 30px, 100%);
+    }
+  }
+  &__pupil {
+    &--3 {
+      @include pupil(15px);
+    }
+    &--4 {
+      @include pupil(15px);
+    }
+    &--7 {
+      @include pupil(13px);
+    }
+    &--8 {
+      @include pupil(20px);
+    }
+    &--11 {
+      @include pupil(15px);
     }
   }
 }
